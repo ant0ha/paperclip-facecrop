@@ -12,7 +12,7 @@ module FaceCrop
               send("after_#{name}_post_process", lambda { FaceCrop::Detector::Cache.clear })
             end
             
-            alias_method_chain :has_attached_file, :face_crop_cache
+            # alias_method_chain :has_attached_file, :face_crop_cache
           end
         end        
       end
